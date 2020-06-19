@@ -53,7 +53,7 @@ public class CheapestFlightsWithinKStops {
             this.M = 0;
             this.adj = (List<DirectedEdge> []) new List[N];
             for (int n = 0; n < N; n++) {
-                adj[n] = new ArrayList<DirectedEdge>();
+                adj[n] = new ArrayList<>();
             }
         }
 
@@ -75,7 +75,7 @@ public class CheapestFlightsWithinKStops {
         }
 
         public Iterable<DirectedEdge> edges() {
-            List<DirectedEdge> list = new ArrayList<DirectedEdge>();
+            List<DirectedEdge> list = new ArrayList<>();
             for (int n = 0; n < N; n++) {
                 for (DirectedEdge e : adj[n]) {
                     list.add(e);
