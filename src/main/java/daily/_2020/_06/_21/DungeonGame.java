@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 public class DungeonGame {
 
     public int calculateMinimumHP(int[][] dungeon) {
-        PriorityQueue<GameState> pq = new PriorityQueue<>();
+        PriorityQueue<GameState> pq = new PriorityQueue<GameState>();
         GameState start = new GameState(dungeon);
         pq.add(start);
         GameState curr = pq.poll();
@@ -71,7 +71,6 @@ public class DungeonGame {
             return (x == board.length - 1) && (y == board[0].length - 1);
         }
 
-        @Override
         public int compareTo(GameState o) {
             return this.biggestCost.compareTo(o.biggestCost);
         }
