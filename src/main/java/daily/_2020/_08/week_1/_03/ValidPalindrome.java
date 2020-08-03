@@ -1,4 +1,4 @@
-package daily._2020._08._03;
+package daily._2020._08.week_1._03;
 
 public class ValidPalindrome {
 
